@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Profile Picture -->
+
+    <!-- Name -->
+    <ImageView
+        android:id="@+id/profile_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/circle_background"
+        android:contentDescription="@string/profile_picture"
+        android:scaleType="centerCrop"
+        android:src="@drawable/little_robot_man_512"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth="150dp"
+        app:layout_constraintHeight="150dp"/>
+
+    <Button
+        android:id="@+id/profile_action_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Follow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.522"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profile_description" />
+
+    <TextView
+        android:id="@+id/profile_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="Android Developer | Kotlin Enthusiast"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profile_name" />
+
+    <TextView
+        android:id="@+id/profile_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Josh Dunn"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.522"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profile_image" />
+
+    <!-- Description -->
+
+    <!-- Action Button -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
